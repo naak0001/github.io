@@ -1,55 +1,104 @@
-header{   
-    padding: 40px;
-       text-align: center;   
-       text-transform: uppercase; 
-         color: #f3f7fb;     
-     background-image:url("../images/lone-starfish-wide.jpg");  
-       }
-       nav ul{
+/* Page background */
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #aad4cf;
+}
+
+/* Main centered container */
+.container {
+    width: 800px;
+    margin: 0 auto;
+    background-color: #d4e9e7;
+}
+
+/* Header banner */
+/* Header banner */
+.banner {
+    background-image: url("../images/lone-starfish-wide.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Header title */
+.banner h1 {
+    margin: 0;
+    color: white;
+    font-size: 52px;
+    font-weight: normal;
+    text-align: center;
+}
+
+/* Navigation */
+nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
 }
 
-nav li{
+nav li {
     flex: 1;
     text-align: center;
     border-right: 1px solid gray;
 }
 
-nav li:last-child{
+nav li:last-child {
     border-right: none;
 }
 
-nav a{
+nav a {
     display: block;
-    padding: 15px;
+    padding: 15px 0;
     text-decoration: none;
     color: black;
+    font-size: 24px;
 }
+
+/* Main content */
 main {
     padding: 20px;
 }
 
-.story h2 {
+/* Section titles */
+h2 {
     margin-top: 0;
+    font-size: 40px;
+    font-weight: normal;
 }
 
+/* Paragraph text */
+p,
+li,
+label {
+    font-size: 20px;
+}
+
+/* Story image */
 .story-image {
     width: 200px;
     float: left;
-    margin-right: 15px;
+    margin-right: 20px;
     margin-bottom: 10px;
 }
-.facts {
-    padding-top: 10px;
+
+/* Clear float */
+.story::after {
+    content: "";
+    display: block;
+    clear: both;
 }
 
+/* Facts list */
 .facts ul {
     padding-left: 20px;
-    margin-top: 0;
 }
+
+/* Contact form */
 .contact form {
     border: 1px solid gray;
     padding: 15px;
@@ -60,30 +109,32 @@ main {
 }
 
 .form-group label {
-    display: inline;
+    display: block;
     margin-bottom: 5px;
 }
 
 .radio-label {
-    display: inline;
-    margin-right: 15px;
+    display: block;
+    margin-bottom: 8px;
 }
 
 input[type="text"],
 input[type="email"],
 textarea {
     width: 100%;
+    padding: 10px;
     box-sizing: border-box;
-    padding: 8px;
 }
 
-
+/* Submit button */
 button {
     padding: 10px 15px;
     border: 1px solid black;
     background-color: #d4e9e7;
 }
-footer{
+
+/* Footer */
+footer {
     text-align: right;
     padding: 20px;
 }

@@ -6,33 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beautiful Butterflies</title>
 
-    <!-- Link to CSS file -->
+    <!-- Link to my CSS file -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <!-- Main page container -->
+    <!-- Main container for the whole page -->
 <div class="container">
 
-    <!-- Header section -->
-    <header>
+    <!-- Header section with main image and  the title -->
+    <header id="home">
         <div class="banner">
          <img src="images/Butterflies-wide.jpg" alt="Butterflies flying over flowers">
             <h1>Beautiful Butterflies</h1>
         </div>
+        
+      
     </header>
+   
         <!-- Navigation menu -->
-    <nav>
-        <ul>
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">STORY</a></li>
-            <li><a href="#">CONTACT</a></li>
-        </ul>
-    </nav>
+  <section id="story" class="story"></section>
+        <section id="contact" class="contact"></section>
+        <nav>
+    <ul>
+        <li><a href="#home">HOME</a></li>
+        <li><a href="#story">STORY</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+    </ul>
+</nav>
         <!-- Main content -->
     <main>
-        <!-- Story section -->
-     <!-- Facts section -->
+        
+        <!-- Story section -->  
 <section class="story">
     <h2>Life of a Butterfly</h2>
 
@@ -62,7 +67,7 @@ also help them communicate with other butterflies and avoid predators.
         
     </main>
     
-            <!-- Facts section -->
+
        <!-- Facts section -->
 <section class="facts">
     <h2>Facts About Butterflies</h2>
@@ -77,23 +82,23 @@ also help them communicate with other butterflies and avoid predators.
                 <!-- Contact section -->
         <section class="contact">
             <h2>Contact to learn more</h2>
-
+               <!-- Name field -->
             <form action="#" method="post">
                 <div class="form-group">
                     <label for="name">Your Name</label>
                     <input type="text" id="name" name="name">
                 </div>
-
+                <!-- Email field -->
                 <div class="form-group">
                     <label for="email">Your Email</label>
                     <input type="email" id="email" name="email">
                 </div>
-
+                <!-- Message field -->
                 <div class="form-group">
                     <label for="message">Your Message</label>
                     <textarea id="message" name="message" rows="5"></textarea>
                 </div>
-
+                 <!-- Radio button choices -->
                 <div class="form-group">
                     <p>Would you visit the starfish?</p>
 
@@ -106,13 +111,14 @@ also help them communicate with other butterflies and avoid predators.
                     <input type="radio" id="maybe" name="visit" value="maybe">
                     <label for="maybe" class="radio-label">Maybe</label>
                 </div>
-
+                
+                 <!-- Submit button -->
                 <button type="submit">SEND</button>
             </form>
         </section>
 <!-- Footer -->
         <footer>
-            <p>&copy; Lone Starfish</p>
+            <p>&copy; Beautiful Butterflies</p>
         </footer>
 
 </div>

@@ -1,14 +1,16 @@
 /* reset */
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
-    font-family: 'Open Sans', sans-serif;
-    line-height: 1.6;
-}
+
 
 /* header */
 .top-header {
@@ -218,7 +220,7 @@ body {
 
 /* hours and location*/
 .hours, .location {
-    
+
     margin-top: 30px;
 }
 
